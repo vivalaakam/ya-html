@@ -5,7 +5,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="jquery.js" ></script>
     <script>
+      $(document).ready(function() {
+        $('.blocks .block').first().addClass('active')
+        $('.navigations .navi a').first().addClass('active')
 
+        $('.navigations .navi a').click(function(e) {
+          e.preventDefault();
+          $('.blocks .block.active , .navigations .navi  a').removeClass('active');
+          $($(this).attr('href'), '.blocks').addClass('active')
+          $(this).addClass('active')
+        })
+      })
     </script>
     <style>
       .navigations {
@@ -19,6 +29,13 @@
 
       .navigations .navi a.active {
         color: yellowgreen;
+      }
+
+      .blocks .block {
+        display: none;
+      }
+      .blocks .block.active {
+        display: block;
       }
     </style>
   </head>
@@ -35,6 +52,20 @@
       </div>
       <div class=navi>
         <a href=#block4 >section4</a>
+      </div>
+    </div>
+    <div class=blocks>
+      <div class=block id=block1>
+        block1 content
+      </div>
+      <div class=block id=block2>  
+        block2 content
+      </div>
+      <div class=block id=block3>  
+        block3 content
+      </div>
+      <div class=block id=block4>  
+        block4 content
       </div>
     </div>
   </body>
