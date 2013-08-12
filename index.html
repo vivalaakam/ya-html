@@ -37,6 +37,24 @@
       .blocks .block.active {
         display: block;
       }
+      .group {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+      }
+      .label {
+        float: left;
+        width: 160px;
+        padding-top: 5px;
+        font-weight: bold;
+        padding-left: 5px;
+      }
+      .content {
+        margin-left: 165px;
+      }
+      .content.description {
+        padding-top: 5px;
+      }
     </style>
   </head>
   <body>
@@ -56,16 +74,283 @@
     </div>
     <div class=blocks>
       <div class=block id=block1>
-        block1 content
+        <div class="question group">
+          <div class="label">
+            Вопрос 1
+          </div>
+          <div class="content description">
+            <p>Год рождения.</p>
+          </div>
+          <div class="content">
+            <textarea name="question1" ></textarea>
+          </div>
+        </div>
+        <div class="question group">
+          <div class="label">
+            Вопрос 2
+          </div>
+          <div class="content description">
+            <p>Город, в котором вы живёте.</p>
+          </div>
+          <div class="content">
+            <textarea name="question2" ></textarea>
+          </div>
+        </div>
+        <div class="question group">
+          <div class="label">
+            Вопрос 3
+          </div>
+          <div class="content description">
+            <p>Вуз, факультет, специальность, кафедра.</p>
+          </div>
+          <div class="content">
+            <textarea name="question1" ></textarea>
+          </div>
+        </div>
+        <div class="question group">
+          <div class="label">
+            Вопрос 4
+          </div>
+          <div class="content description">
+            <p>Год окончания вуза.</p>
+          </div>
+          <div class="content">
+            <textarea name="question4" ></textarea>
+          </div>
+        </div>
+        <div class="question group">
+          <div class="label">
+            Вопрос 5
+          </div>
+          <div class="content description">
+            <p>Уровень владения английским языком:</p>
+          </div>
+          <div class="content">
+            <input type="checkbox" name="question5_c" id="question5_c1" value="1"/>
+            <label for="question5_c1">начальный;</label>
+          </div>
+          <div class="content">
+            <input type="checkbox" name="question5_c" id="question5_c1" value="1"/>
+            <label for="question5_c1"> средний;</label>
+          </div>
+          <div class="content">
+            <input type="checkbox" name="question5_c" id="question5_c1" value="1"/>
+            <label for="question5_c1"> свободное владение</label>
+          </div>
+          <div class="content">
+            <textarea name="question5" ></textarea>
+          </div>
+        </div>
       </div>
       <div class=block id=block2>  
-        block2 content
+        <div class="question group">
+          <div class="label">
+            Вопрос 6
+          </div>
+          <div class="content description">
+            <p>Чего вы ожидаете от участия в Школе?</p>
+          </div>
+          <div class="content">
+            <textarea name="question6" ></textarea>
+          </div>
+        </div>
+        <div class="question group">
+          <div class="label">
+            Вопрос 7
+          </div>
+          <div class="content description">
+            <p>Откуда вы о нас узнали?</p>
+          </div>
+          <div class="content">
+            <textarea name="question7" ></textarea>
+          </div>
+        </div>
+        <div class="question group">
+          <div class="label">
+            Вопрос 8
+          </div>
+          <div class="content description">
+            <p>Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?</p>
+          </div>
+          <div class="content">
+            <textarea name="question8" ></textarea>
+          </div>
+        </div>
+        <div class="question group">
+          <div class="label">
+            Вопрос 9
+          </div>
+          <div class="content description">
+            <p>Расскажите о вашем опыте разработки. Нам будет интересно всё — как серьезный интерфейс, так и просто домашняя страничка.</p>
+          </div>
+          <div class="content">
+            <textarea name="question9" ></textarea>
+          </div>
+        </div>
+        <div class="question group">
+          <div class="label">
+            Вопрос 10
+          </div>
+          <div class="content description">
+            <p>Если вы где-нибудь работали, расскажите, какие у вас были должностные обязанности и был ли опыт работы в команде.</p>
+          </div>
+          <div class="content">
+            <textarea name="question10" ></textarea>
+          </div>
+        </div>
       </div>
       <div class=block id=block3>  
-        block3 content
+        <div class="question group">
+          <div class="label">
+            Вопрос 11
+          </div>
+          <div class="content description">
+            <p>Перечислите, какими программными продуктами вы пользуетесь в своей работе — от редактора до специализированных утилит (Intellij Idea, Node.js, Uglify.js, GNU Make). Для каждого инструмента укажите, какие задачи вы с помощью него решаете и почему выбрали именно его.</p>
+          </div>
+          <div class="content">
+            <textarea name="question11" ></textarea>
+          </div>
+        </div>  
+        <div class="question group">
+          <div class="label">
+            Вопрос 12
+          </div>
+          <div class="content description">
+            <p>Пользуетесь ли вы командной строкой? Какими командами вы пользуетесь и какие задачи вы решаете с их помощью? С какими программами вы преимущественно или полностью взаимодействуете через интерфейс командной строки?</p>
+          </div>
+          <div class="content">
+            <textarea name="question12" ></textarea>
+          </div>
+        </div>  
+        <div class="question group">
+          <div class="label">
+            Вопрос 13
+          </div>
+          <div class="content description">
+            <p>Напишите на JavaScript функцию, которая выводит список всех чисел, которые равны сумме факториалов своих цифр. Пример такого числа:</p>
+            <p class="example">4! + 0! + 5! + 8! + 5! = 40585</p>
+            <p>В качестве ответа на вопрос пришлите ссылку на http://jsfiddle.net/ с вашим кодом или на ваш репозиторий на https://github.com/.</p>
+          </div>
+          <div class="content">
+            <textarea name="question13" ></textarea>
+          </div>
+        </div>  
+        <div class="question group">
+          <div class="label">
+            Вопрос 14
+          </div>
+          <div class="content description">
+            <p>Вы — пилот грузового межгалактического корабля. Ваша работа — перевозка грузов с одной планету на другую. Грузоподъемность вашего корабля ограничена, поэтому за один рейс вы можете перевезти не более N кг полезного груза. Ваш корабль умеет сообщать свое состояние (местоположение и степень загруженности), а также летать в любую точку пространства. Каждая планета может содержать на себе груз, который можно взять. Также на каждой планете груз можно оставить .</p>
+            <p>Задание</p>
+            <p>Даны незавершенные интерфейсы корабля и планеты. Напишите недостающий код.</p>
+            <p>Полное условие задачи доступно на</p>
+            <p>https://github.com/yandex-shri/introtask-space.</p>
+            <p>В качестве ответа на вопрос пришлите ссылку на http://jsfiddle.net/ с вашим кодом или на ваш репозиторий на https://github.com/.</p>
+          </div>
+          <div class="content">
+            <textarea name="question14" ></textarea>
+          </div>
+        </div>  
+        <div class="question group">
+          <div class="label">
+            Вопрос 15
+          </div>
+          <div class="content description">
+            <p>Сверстайте форму-анкету с нашими заданиями для кандидатов. Страница должна работать в следующих браузерах: MSIE (8, 9, 10), Google Chrome (26, 27), Firefox (20, 21), Opera (12.15, 12.14), Яндекс.Браузер 1.5. По возможности используйте приёмы безопасной деградации CSS. Страница должна содержать интерактив, реализованный с помощью JS и jQuery. Это может быть:</p>
+            <ul>
+              <li>проверка полноты и правильности заполнения полей (где это возможно);</li>
+              <li>возможность свернуть и развернуть разделы (аккордеон);</li>
+              <li>индикатор заполнения анкеты;</li>
+              <li>что-нибудь ещё.</li>
+            </ul>
+            <p>Подумайте над тем, как эти данные будут отправляться на сервер.</p>
+            <p>Будет плюсом, если вы сверстаете страницу, используя БЭМ.</p>
+            <p>Дополнительные задания</p>
+            <p>1. Выполните задание про форму-анкету, используя один из классических шаблонизаторов: Handlebars, mustache, Dust, Jade и т.п.</p>
+            <p>2. Выполните задание про форму-анкету, используя один из экзотических шаблонизаторов: XSLT, YATE, BEMHTML и т.п.</p>
+            <p>Разработку необходимо вести на https://github.com/. В качестве ответа на вопрос пришлите ссылку на проект.</p>
+          </div>
+          <div class="content">
+            <textarea name="question15" ></textarea>
+          </div>
+        </div>  
       </div>
       <div class=block id=block4>  
-        block4 content
+        <div class="question group">
+          <div class="label">
+            Резюме до 250 КБ
+          </div>
+          <div class="content">
+            <input type="file" name="resume" />
+          </div>
+        </div> 
+        <div class="question group">
+          <div class="label">
+            Ссылка на профиль в Моем Круге
+          </div>
+          <div class="content">
+            <input type="text" name="my" />
+          </div>
+        </div> 
+        <div class="question group">
+          <div class="label">
+            Имя, Фамилия
+          </div>
+          <div class="content">
+            <input type="text" name="name" />
+          </div>
+        </div> 
+        <div class="question group">
+          <div class="label">
+            Телефон
+          </div>
+          <div class="content">
+            <input type="text" name="phone" />
+            <div class="help">Пожалуйста, укажите код города</div>
+          </div>
+        </div> 
+        <div class="question group">
+          <div class="label">
+            E-mail
+          </div>
+          <div class="content">
+            <input type="text" name="email" />
+            <div class="help">example@example.com</div>
+          </div>
+        </div> 
+        <div class="question group">
+          <div class="label">
+            Дополнительные сведения
+          </div>
+          <div class="content">
+            <textarea name="dop"></textarea>
+          </div>
+        </div> 
+        <div class="question group">
+          <div class="content">
+            Откуда вы узнали о нашем предложении?
+          </div>
+          <div class="content">
+            <select name="source">
+              <option value="">Выбрать</option>
+              <option value="hr">от HR-менеджера Яндекса</option>
+              <option value="ya">Я.Субботник</option>
+              <option value="yac">Yet another Conference</option>
+              <option value="conf">на другой конференции</option>
+              <option value="search">из поиска</option>
+              <option value="recommend">по рекомендации</option>
+              <option value="other">другое</option>
+            </select>
+          </div>
+        </div> 
+        <div class="question group">
+          <div class="content">
+            <input type="checkbox" name="confirm" id="confirm" />
+            <label for="confirm">
+              Я даю свое согласие на передачу в ООО «ЯНДЕКС» резюме и/или анкеты, содержащих мои персональные данные, и согласен с тем, что они будут храниться в ООО «ЯНДЕКС» в течение 5 лет и будут обрабатываться исключительно для целей предложения мне вакансий группы компаний «ЯНДЕКС», в соответствии с Федеральным законом «О персональных данных».
+            </label>
+          </div>
+        </div> 
       </div>
     </div>
   </body>
